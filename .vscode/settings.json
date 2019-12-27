@@ -1,0 +1,41 @@
+{
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "XeLaTeX",
+            "tools": [
+                "XeLaTeX",
+            ]
+        },
+        {
+            "name": "XeLaTeX -> BibTeX*2 -> XeLaTeX*2",
+            "tools": [
+                "XeLaTeX",
+                "BibTeX",
+                "XeLaTeX",
+                "XeLaTeX"
+            ]
+        }
+    ],
+    "latex-workshop.latex.outDir": "Tmp",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "XeLaTeX",
+            "command": "xelatex",
+            "args": [
+                "--shell-escape",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-output-directory=%OUTDIR%",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "BibTeX",
+            "command": "bibtex",
+            "args": [
+                "%OUTDIR%/%DOCFILE%"
+            ]
+        }
+    ]
+}
