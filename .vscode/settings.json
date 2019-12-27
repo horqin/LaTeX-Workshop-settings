@@ -7,7 +7,7 @@
             ]
         },
         {
-            "name": "XeLaTeX -> BibTeX*2 -> XeLaTeX*2",
+            "name": "XeLaTeX -> BibTeX -> XeLaTeX*2",
             "tools": [
                 "XeLaTeX",
                 "BibTeX",
